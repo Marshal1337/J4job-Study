@@ -1,20 +1,18 @@
 <project>
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>J.JavaStudy</groupId>
-	<artifactId>Module_1</artifactId>
+	<groupId>J.JavaStudy.Module_1</groupId>
+	<artifactId>Lesson_2</artifactId>
 	<packaging>jar</packaging>
 	<version>1.0</version>
 
-	<modules>
-		<module>Lesson_1</module>
-		<module>Lesson_2</module>
-	</modules>
+	
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.hamcrest</groupId>
