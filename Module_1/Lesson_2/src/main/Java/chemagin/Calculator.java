@@ -3,10 +3,7 @@ package chemagin;
 public class Calculator {
 
 	public double result;
-	public double first;
-	public double second;
-		
-
+	
 	public void addSum(double first, double second){
 		result = first + second;
 		System.out.println(result);
