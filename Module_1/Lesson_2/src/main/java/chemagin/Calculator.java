@@ -1,7 +1,7 @@
 package chemagin;
 
 /**
- * Class Класс для вычисления арифметических операций сложения, вычитания, умножения и деления.
+ * Class РљР»Р°СЃСЃ РґР»СЏ РІС‹С‡РёСЃР»РµРЅРёСЏ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРёС… РѕРїРµСЂР°С†РёР№ СЃР»РѕР¶РµРЅРёСЏ, РІС‹С‡РёС‚Р°РЅРёСЏ, СѓРјРЅРѕР¶РµРЅРёСЏ Рё РґРµР»РµРЅРёСЏ.
  * @author Chemagin Evgeny
  * @since 17.11.2016
  * @version 1
@@ -10,10 +10,10 @@ package chemagin;
 public class Calculator {
 
 	/**
-	 * Сложение.
-	 * @param first первый аргумент.
-	 * @param second второй аргумент.
-	 * @return результат.
+	 * РЎР»РѕР¶РµРЅРёРµ.
+	 * @param first РїРµСЂРІС‹Р№ Р°СЂРіСѓРјРµРЅС‚.
+	 * @param second РІС‚РѕСЂРѕР№ Р°СЂРіСѓРјРµРЅС‚.
+	 * @return СЂРµР·СѓР»СЊС‚Р°С‚.
 	 */
 
 	public double addSum(double first, double second) {
@@ -21,10 +21,10 @@ public class Calculator {
 	}
 
 	/**
-	 * Вычитание.
-	 * @param first первый аргумент.
-	 * @param second второй аргумент.
-	 * @return результат.
+	 * Р’С‹С‡РёС‚Р°РЅРёРµ.
+	 * @param first РїРµСЂРІС‹Р№ Р°СЂРіСѓРјРµРЅС‚.
+	 * @param second РІС‚РѕСЂРѕР№ Р°СЂРіСѓРјРµРЅС‚.
+	 * @return СЂРµР·СѓР»СЊС‚Р°С‚.
 	 */
 
 	public double addSub(double first, double second) {
@@ -32,10 +32,10 @@ public class Calculator {
 	}
 
 	/**
-	 * Умножение.
-	 * @param first первый аргумент.
-	 * @param second второй аргумент.
-	 * @return результат.
+	 * РЈРјРЅРѕР¶РµРЅРёРµ.
+	 * @param first РїРµСЂРІС‹Р№ Р°СЂРіСѓРјРµРЅС‚.
+	 * @param second РІС‚РѕСЂРѕР№ Р°СЂРіСѓРјРµРЅС‚.
+	 * @return СЂРµР·СѓР»СЊС‚Р°С‚.
 	 */
 
 	public double addMult(double first, double second) {
@@ -43,10 +43,10 @@ public class Calculator {
 	}
 
 	/**
-	 * Деление.
-	 * @param first первый аргумент.
-	 * @param second второй аргумент.
-	 * @return результат.
+	 * Р”РµР»РµРЅРёРµ.
+	 * @param first РїРµСЂРІС‹Р№ Р°СЂРіСѓРјРµРЅС‚.
+	 * @param second РІС‚РѕСЂРѕР№ Р°СЂРіСѓРјРµРЅС‚.
+	 * @return СЂРµР·СѓР»СЊС‚Р°С‚.
 	 */
 
 	public double addDiv(double first, double second) {
