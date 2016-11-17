@@ -2,34 +2,55 @@ package chemagin;
 
 import org.junit.Test;
 import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
-public class CalculatorTest{
-	@Test
-	public void WhenAddSumShouldSummateIt(){
-	final Calculator calc = new Calculator();
-	calc.addSum(1.01, 1.01);
-	assertThat (calc.result, is(2.02));
-	}
-	
-	@Test
-	public void WhenAddSubShouldSubstractIt(){
-	final Calculator calc = new Calculator();	
-	calc.addSub(2.02, 2.02);
-	assertThat (calc.result, is(0.0));
-	}
+/**
+ * Test for Calculator.
+ *
+ *@author Chemagin Evgeny
+ *@version 1
+ *@since 17.11.2016
+ */
 
-	@Test
-	public void WhenAddMultShouldMultiplicateIt(){
-	final Calculator calc = new Calculator();	
-	calc.addMult(3.03, 3.03);
-	assertThat (calc.result, is(9.1809));
-	}
+public class CalculatorTest {
+
+	/**
+	 * Тест метода, выполняющего сложение.
+	 */
 
 	@Test
-	public void WhenAddDivShouldDivisionIt(){
-	final Calculator calc = new Calculator();	
-	calc.addDiv(4.04, 4.04);
-	assertThat (calc.result, is(1.0));
+	public void whenAddSumShouldSummateIt() {
+		final Calculator calc = new Calculator();
+		assertThat(calc.addSum(1, 1), is(2d));
+	}
+
+	/**
+	 * Тест метода, выполняющего вычитание.
+	 */
+
+	@Test
+	public void whenAddSubShouldSubstractIt() {
+		final Calculator calc = new Calculator();
+		assertThat(calc.addSub(2, 2), is(0d));
+	}
+
+	/**
+	 * Тест метода, выполняющего умножение.
+	 */
+
+	@Test
+	public void whenAddMultShouldMultiplicateIt() {
+		final Calculator calc = new Calculator();
+		assertThat(calc.addMult(1, 2), is(2d));
+	}
+
+	/**
+	 * Тест метода, выполняющего деление.
+	 */
+
+	@Test
+	public void whenAddDivShouldDivisionIt() {
+		final Calculator calc = new Calculator();
+		assertThat(calc.addDiv(2, 2), is(1d));
 	}
 }
