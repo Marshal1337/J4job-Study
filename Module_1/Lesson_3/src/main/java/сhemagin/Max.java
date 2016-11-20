@@ -1,7 +1,7 @@
 package chemagin;
 
 /**
- *Class Êëàññ, âû÷èñëÿþþùèé ìàêñèìàëüíîå èç äâóõ ÷èñåë.
+ *Class ÐšÐ»Ð°ÑÑ, Ð²Ñ‹Ñ‡Ð¸ÑÐ»ÑÑŽÑ‰Ð¸Ð¹ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð¸Ð· Ð´Ð²ÑƒÑ… Ñ‡Ð¸ÑÐµÐ».
  *@author Chemagin Evgeny
  *@version 1
  *@since 17.11.2016
@@ -10,10 +10,10 @@ package chemagin;
  public class Max {
 
 /**
- *Ìåòîä, âîçâðàùàþùèé ìàêñèìàëüíîå èç äâóõ ÷èñåë.
- *@param first ïåðâîå ÷èñëî.
- *@param second âòîðîå ÷èñëî.
- *@return result ðåçóëüòàò.
+ *ÐœÐµÑ‚Ð¾Ð´, Ð²Ð¾Ð·Ð²Ñ€Ð°Ñ‰Ð°ÑŽÑ‰Ð¸Ð¹ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð¸Ð· Ð´Ð²ÑƒÑ… Ñ‡Ð¸ÑÐµÐ».
+ *@param first Ð¿ÐµÑ€Ð²Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾.
+ *@param second Ð²Ñ‚Ð¾Ñ€Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾.
+ *@return result Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚.
  */
 
 	public int max(int first, int second) {
@@ -22,11 +22,11 @@ package chemagin;
 	}
 
 /**
- *Ìåòîä, âîçâðàùàþùèé ìàêñèìàëüíîå èç òð¸õ ÷èñåë.
- *@param first ïåðâîå ÷èñëî.
- *@param second âòîðîå ÷èñëî.
- *@param third òðåòüå ÷èñëî.
- *@return result ðåçóëüòàò.
+ *ÐœÐµÑ‚Ð¾Ð´, Ð²Ð¾Ð·Ð²Ñ€Ð°Ñ‰Ð°ÑŽÑ‰Ð¸Ð¹ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð¸Ð· Ñ‚Ñ€Ñ‘Ñ… Ñ‡Ð¸ÑÐµÐ».
+ *@param first Ð¿ÐµÑ€Ð²Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾.
+ *@param second Ð²Ñ‚Ð¾Ñ€Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾.
+ *@param third Ñ‚Ñ€ÐµÑ‚ÑŒÐµ Ñ‡Ð¸ÑÐ»Ð¾.
+ *@return result Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚.
  */
 	public int triplemax(int first, int second, int third) {
 		int result = this.max(first, second) > third ? this.max(first, second) : third;
