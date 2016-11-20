@@ -1,8 +1,8 @@
 package chemagin;
 
 import org.junit.Test;
-import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
+import static org.hamcrest.number.IsCloseTo.closeTo;
 
 /**
  * Test for Point.
@@ -19,10 +19,10 @@ public class PointTest {
 
 	@Test
 	public void whendistanceToReturndistance() {
-		final double res = 1.4142135623730951;
+		final double res = 1.4d;
 		final Point a = new Point(2.00, 3.00);
 		final Point b = new Point(3.00, 4.00);
 		double sideAB = a.distanceTo(b);
-		assertThat(sideAB, is(res));
+		assertThat(sideAB, closeTo(res, 1));
 	}
 }
