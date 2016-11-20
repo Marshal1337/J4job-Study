@@ -14,16 +14,16 @@ public class MaxSide {
  *@param sideAB сторона AB.
  *@param sideAC сторона AC.
  *@param sideBC сторона BC.
- *@return результат.
+ *@return result результат.
  */
 
 	public double max(double sideAB, double sideAC, double sideBC) {
+		double result = sideBC;
 		if (sideAB > sideAC && sideAB > sideBC) {
-			return sideAB;
+			result = sideAB;
 		} else if (sideAC > sideAB && sideAC > sideBC) {
-			return sideAC;
-		} else {
-			return sideBC;
+			result = sideAC;
 		}
+		return result;
 	}
 }

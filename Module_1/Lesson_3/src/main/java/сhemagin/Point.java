@@ -8,8 +8,18 @@ package chemagin;
  */
 
 public class Point {
-	public double x;
-	public double y;
+
+/**
+ * Поле, объявляющее координату x точки.
+ */
+
+	private double x;
+
+/**
+ * Поле, объявляющее координату y точки.
+ */
+
+	private double y;
 
 /**
  *Конструктор объекта "Point".
