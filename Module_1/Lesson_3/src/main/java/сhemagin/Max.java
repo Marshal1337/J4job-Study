@@ -1,7 +1,7 @@
 package chemagin;
 
 /**
- *Class Класс, вычисляющий максимальное из двух чисел.
+ *Class  ласс, вычисл¤ющий максимальное из двух чисел.
  *@author Chemagin Evgeny
  *@version 1
  *@since 17.11.2016
@@ -10,26 +10,26 @@ package chemagin;
  public class Max {
 
 /**
- *Метод, возвращающий максимальное из двух чисел.
+ *ћетод, возвращающий максимальное из двух чисел.
  *@param first первое число.
  *@param second второе число.
- *@return result результат.
+ *@return результат.
  */
 
 	public int max(int first, int second) {
-		int result = first > second ? first : second;
-		return result;
+		return first > second ? first : second;
 	}
 
 /**
- *Метод, возвращающий максимальное из трёх чисел.
+ *ћетод, возвращающий максимальное из трЄх чисел.
  *@param first первое число.
  *@param second второе число.
  *@param third третье число.
- *@return result результат.
+ *@return результат.
  */
+
 	public int triplemax(int first, int second, int third) {
-		int result = this.max(first, second) > third ? this.max(first, second) : third;
-		return result;
+		first = this.max(first, second);
+		return this.max(first, third);
 	}
 }
