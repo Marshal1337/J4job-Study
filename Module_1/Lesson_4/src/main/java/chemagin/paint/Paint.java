@@ -25,8 +25,10 @@ public class Paint {
 			for (int j = 1; j <= i; j++) {
 				sb.append("^ ");
 			}
+			if (i < h) {
+				sb.append(System.getProperty("line.separator"));
+			}
 			i++;
-			sb.append(System.getProperty("line.separator"));
 		}
 		return sb.toString();
 	}

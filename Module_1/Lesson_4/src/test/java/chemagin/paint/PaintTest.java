@@ -3,6 +3,7 @@ package chemagin.paint;
 import org.junit.Test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
+import com.google.common.base.Joiner;
 
 /**
  *Test for Paint.
@@ -21,7 +22,8 @@ public class PaintTest {
 	public void ifHisThreeThenBuildPipamid() {
 		final Paint paint = new Paint();
 		final int h = 3;
-		final String result = "   ^ " + System.getProperty("line.separator") + "  ^ ^ " + System.getProperty("line.separator") + " ^ ^ ^ " + System.getProperty("line.separator");
+		final Joiner joiner = Joiner.on(System.getProperty("line.separator"));
+		final String result = joiner.join("   ^ ", "  ^ ^ ", " ^ ^ ^ ").toString();
 		assertThat(paint.piramid(h), is(result));
 	}
 }
