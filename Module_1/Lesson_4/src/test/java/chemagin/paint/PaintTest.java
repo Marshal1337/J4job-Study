@@ -23,7 +23,7 @@ public class PaintTest {
 		final Paint paint = new Paint();
 		final int h = 3;
 		final Joiner joiner = Joiner.on(System.getProperty("line.separator"));
-		final String result = joiner.join("   ^ ", "  ^ ^ ", " ^ ^ ^ ").toString();
+		final String result = joiner.join("   ^ ", "  ^ ^ ", " ^ ^ ^ ");
 		assertThat(paint.piramid(h), is(result));
 	}
 }
