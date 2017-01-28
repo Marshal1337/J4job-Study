@@ -17,18 +17,18 @@ public class Dublicate {
  */
 
 	public String[] delDublicate(String[] values) {
+		int counter = 0;
 		for (int index1 = 0; index1 < values.length; index1++) {
 			for (int index2 = index1 + 1; index2 < values.length; index2++) {
-				if (values[index1] == values[index2]) {
-					values[index2] = null;
-					for (int index3 = index2; index3 < values.length - 1; index3++) {
-						values[index3] = values[index3 + 1];
-					}
-					values = Arrays.copyOf(values, values.length - 1);
+				if (values[index1] == values[index2] && values[index1] != null) {
+					counter++;
+					values[index2] = values[values.length - counter];
+					values[values.length - counter] = null;
 					index2--;
 				}
 			}
 		}
+		values = Arrays.copyOf(values, values.length - counter);
 		return values;
 	}
 }

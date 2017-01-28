@@ -14,7 +14,7 @@ import static org.junit.Assert.assertThat;
  public class SquareTurnTest {
 
 /**
- *Тест метода turn.
+ *РўРµСЃС‚ РјРµС‚РѕРґР° turn.
  */
 
 	@Test

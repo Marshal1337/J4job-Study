@@ -14,7 +14,7 @@ import static org.junit.Assert.assertThat;
  public class BubbleTest {
 
 /**
- *Тест метода back.
+ *РўРµСЃС‚ РјРµС‚РѕРґР° back.
  */
 
 	@Test
