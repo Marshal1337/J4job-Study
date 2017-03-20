@@ -1,6 +1,5 @@
 <project>
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>JavaStudy</groupId>
 	<artifactId>JStudy.Module_1</artifactId>
 	<packaging>pom</packaging>
 	<version>1.0</version>
@@ -11,6 +10,7 @@
 		<module>Lesson_3</module>
 		<module>Lesson_4</module>
 		<module>Lesson_5</module>
+		<module>TestTask</module>
 	</modules>
 	
 	<parent>
